@@ -18,5 +18,8 @@ IWebServicePortType proxy = miAnmat.connect();
 proxy.sendMedicamentos(crearMedicamento(), "pruebaws", "Clave1234"); 
 ```
 
+#### Consideraciones.
+
+En el pom.xml estan las dependencias y el plugin que se necesita para generar las clases
 
 Proyecto produccion de CloudERP
