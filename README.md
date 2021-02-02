@@ -7,7 +7,7 @@ El siguiente proyecto describe los artefactos necesarios para conectarsecon anma
 # Instrucciones
 
 Ya tiene el codigo de WSDL importado, con el plugin ``` jaxws-maven-plugin ``` el cual se corre con el comando ``` jaxws:wsimport ``` 
-luego los jar necesarios para la compilacion y ejecucion del codigo se encuentran en 
+luego los jar necesarios para la compilacion y ejecucion del codigo se encuentran en la carpeta *jar*
 
 Para comenzar a usar se debe instanciar la clase java Anmat y llamar al metodo connect, el cual devuelve un proxy con todos los mensajes que tiene el anmat. 
 
