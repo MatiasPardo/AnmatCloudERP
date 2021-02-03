@@ -4,15 +4,17 @@ import java.net.MalformedURLException;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.inssjp.mywebservice.business.MedicamentosDTO;
+import com.inssjp.webservice.business.IWebService;
+
 
 public class Test {
 
 	public static void main(String[] args) throws MalformedURLException{
 		Anmat miAnmat = new Anmat();
-		System.out.println(miAnmat.connect().sendMedicamentos(crearMedicamento(), "pruebaws", "Clave1234"));
+		IWebService proxy = miAnmat.connect();
+		proxy.getMedico("pruebaws", "Clave1234","");
 	}
-	
+	/*
 	public static List<MedicamentosDTO> crearMedicamento(){
 			
 			List<MedicamentosDTO> medicamentos = new LinkedList<MedicamentosDTO>();
@@ -47,5 +49,5 @@ public class Test {
 	
 			return medicamentos;
 			
-		}
+		}*/
 }

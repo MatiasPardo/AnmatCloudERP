@@ -40,7 +40,7 @@
     			<xdebug>true</xdebug>
     			<sourceDestDir>src/main/java</sourceDestDir>
     			<wsdlUrls>
-    				<wsdlUrl>https://trazabilidad.pami.org.ar:9050/trazamed.WebService?wsdl</wsdlUrl>
+    				<wsdlUrl>https://servicios.pami.org.ar/trazaprodmed.WebService?wsdl</wsdlUrl>
     			</wsdlUrls>
     		</configuration>
   		</plugin>
