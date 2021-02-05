@@ -506,7 +506,7 @@
   </wsdl:binding>
   <wsdl:service name="IWebServiceService">
     <wsdl:port binding="tns:IWebServiceServiceSoapBinding" name="IWebServicePort">
-      <soap:address location="https://servicios.pami.org.ar/trazaenprodmed.WebService"/>
+      <soap:address location="https://servicios.pami.org.ar/trazaprodmed.WebService"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

@@ -2,6 +2,7 @@ package org.anmat.conection;
 
 import java.net.MalformedURLException;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -16,6 +17,8 @@ import org.apache.ws.security.handler.WSHandlerConstants;
 
 import com.inssjp.webservice.business.IWebService;
 import com.inssjp.webservice.business.IWebServiceService;
+import com.inssjp.webservice.business.WebServiceError;
+import com.inssjp.webservice.business.WebServiceResponse;
 
 
 public class Anmat {
@@ -34,6 +37,24 @@ public class Anmat {
         
        return webService;
 	}
+	
+	public List<String> getErrorsResponse(WebServiceResponse webServiceResponse) {
+		WebServiceResponse wsr = null;
+		List<String> errores = new LinkedList<String>();
+        try	{
+        	wsr = webServiceResponse;
+        	List<WebServiceError> lst_errores = wsr.getErrores();
+			for (int i=0; i < lst_errores.size(); i++) {
+				errores.add(lst_errores.get(i).getCError());
+				errores.add(lst_errores.get(i).getDError());
+			}
+			return errores;
+        } catch (Exception e) {
+        	e.printStackTrace();
+        	return null;
+        }
+	}
+	
 	@SuppressWarnings({"unchecked" })
 	private void ConfigureHTTPSSoapHeaders(IWebService webService) {
     	

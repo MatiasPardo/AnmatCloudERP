@@ -34,7 +34,7 @@ public class IWebServiceService
         WebServiceException e = null;
         try {
         	url = new File("trazaprodmed.WebService_wsdl.wsdl").toURL();
-            url = new URL("https://servicios.pami.org.ar/trazaprodmed.WebService?wsdl");
+            //url = new URL("https://servicios.pami.org.ar/trazaprodmed.WebService?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
