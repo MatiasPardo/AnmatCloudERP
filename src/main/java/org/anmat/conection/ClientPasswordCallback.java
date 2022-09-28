@@ -8,7 +8,7 @@ import org.apache.ws.security.WSPasswordCallback;
 
 
 /**
- * @author FBocchio
+ * @author Pardo
  *
  */
 public class ClientPasswordCallback implements CallbackHandler {

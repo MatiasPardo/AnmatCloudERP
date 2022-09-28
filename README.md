@@ -1,25 +1,15 @@
-### AnmatCloudERP
+# Trazabilidad de productos medicos - WS Soap
 
-## Introduccion
+## Starting 🚀
 
-El siguiente proyecto describe los artefactos necesarios para conectarsecon anmat produccion. 
+These projects are tools that serve to make the connection with MP more friendly
 
-# Instrucciones
-
-Ya tiene el codigo de WSDL importado, con el plugin ``` jaxws-maven-plugin ``` el cual se corre con el comando ``` jaxws:wsimport ``` 
-luego los jar necesarios para la compilacion y ejecucion del codigo se encuentran en la carpeta *jar*
-
-Para comenzar a usar se debe instanciar la clase java Anmat y llamar al metodo connect, el cual devuelve un proxy con todos los mensajes que tiene el anmat. 
-
-Ej:
-``` 
-Anmat miAnmat = new Anmat();
-IWebServicePortType proxy = miAnmat.connect();
-proxy.sendMedicamentos(crearMedicamento(), "pruebaws", "Clave1234"); 
+### Deploy 🔧
+```
+Download the jar and associate it to your java project
 ```
 
-#### Consideraciones.
+## Autors ✒️
 
-En el pom.xml estan las dependencias y el plugin que se necesita para generar las clases
 
-Proyecto produccion de CloudERP
+* **Matias Pardo** - [MatiasPardo](https://github.com/matiaspardo)
